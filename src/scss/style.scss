@@ -1,0 +1,95 @@
+@import "bootstrap/scss/functions";
+
+@import "variables";
+
+/* Bootstrap - required */
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+/* Bootstrap - base */
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/transitions";
+
+/* Bootstrap - components */
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/navbar";
+
+@import "bootstrap/scss/utilities/api";
+
+/* Own styles */
+.icon {
+  display: inline-block;
+  line-height: 1;
+}
+
+.icon svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: -0.125em;
+}
+
+.app-navbar {
+  background-color: $primary;
+  border-bottom: 4px solid $secondary;
+}
+
+.app-navbar .navbar-brand {
+  color: #fff;
+}
+
+.xml-preview {
+  font-family: var(--bs-font-monospace);
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 75vh;
+  overflow-y: auto;
+  background-color: var(--bs-tertiary-bg);
+  border: 1px solid var(--bs-border-color);
+  padding: 1rem;
+  margin: 0;
+}
+
+.dropzone {
+  border: 2px dashed var(--bs-border-color);
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.dropzone:hover,
+.dropzone.dragover {
+  border-color: var(--bs-primary);
+  background-color: var(--bs-tertiary-bg);
+}
+
+.dropzone-icon {
+  font-size: 2rem;
+}
+
+.preview-pane {
+  position: sticky;
+  top: 1rem;
+}
+
+[data-bs-theme="dark"] .btn-outline-secondary {
+  --bs-btn-color: #9fc4d2;
+  --bs-btn-border-color: #5a8ea1;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #5a8ea1;
+  --bs-btn-hover-border-color: #5a8ea1;
+  --bs-btn-active-bg: #5a8ea1;
+  --bs-btn-active-border-color: #5a8ea1;
+}
