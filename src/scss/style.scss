@@ -20,6 +20,7 @@
 /* Bootstrap - components */
 @import "bootstrap/scss/alert";
 @import "bootstrap/scss/buttons";
+@import "bootstrap/scss/close";
 @import "bootstrap/scss/button-group";
 @import "bootstrap/scss/forms";
 @import "bootstrap/scss/navbar";
@@ -46,6 +47,14 @@
 
 .app-navbar .navbar-brand {
   color: #fff;
+}
+
+.app-toast {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1090;
+  width: min(24rem, calc(100vw - 2rem));
 }
 
 .xml-preview {

@@ -13,6 +13,7 @@ Homebrew Channel.
 - Release date picker producing the `YYYYMMDD` or `YYYYMMDDhhmmss` formats the Homebrew
   Channel understands; imported values are preserved as-is with a soft validity hint.
 - Light / dark / automatic theme.
+- Works offline and installs as an app.
 
 ## Development
 
@@ -23,3 +24,10 @@ npm run build      # type-check and build to dist/
 npm run check      # Biome lint + format check
 npm run typecheck  # vue-tsc type check
 ```
+
+`icon.svg` in the repository root is the source of `public/icon.png`:
+
+```bash
+magick icon.svg -strip PNG24:public/icon.png
+```
+

@@ -4,6 +4,7 @@ import AppIcon from './components/AppIcon.vue';
 import ImportDropzone from './components/ImportDropzone.vue';
 import MetaForm from './components/MetaForm.vue';
 import ThemeSwitcher from './components/ThemeSwitcher.vue';
+import UpdatePrompt from './components/UpdatePrompt.vue';
 import XmlPreview from './components/XmlPreview.vue';
 import { parseMetaXml, serializeMetaXml } from './lib/metaXml';
 import { emptyMeta, type MetaXml } from './types';
@@ -71,4 +72,6 @@ function reset(): void {
       </div>
     </div>
   </main>
+
+  <UpdatePrompt />
 </template>
